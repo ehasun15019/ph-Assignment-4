@@ -7,4 +7,10 @@ function totalFine(fare) {
   return fine;
 }
 
-console.log(totalFine(552));
+function onlyCharacter(str) {
+  if (typeof str !== "string") {
+    return "Invalid";
+  }
+
+  return str.replace(/\s+/g, "").toUpperCase();
+}
